@@ -1,15 +1,17 @@
 import { useState } from 'react';
 import './App.css'
-//import Footer from './components/Footer';
+import Card from './components/Card'
 import Form from './components/Form'
+import Footer from './components/Footer';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
+      <Card />
       <Form />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

@@ -15,8 +15,8 @@ function Form() {
                 </section>
                 <section className={styles.form_info}>
                     <div className={styles.form_date}>
-                        <label> exp. date (mm/yy) </label>
-                        <label> cvc </label>{/* <br/> */}
+                        <label className={styles.exp_date_title}> exp. date (mm/yy) </label>
+                        <label className={styles.cvc_title}> cvc </label>
                         
                     </div>
                     <div className={styles.form_exp}>
@@ -24,9 +24,8 @@ function Form() {
                             <input className={styles.month} type="number" placeholder="MM" />
                             <input className={styles.year} type="number" placeholder="YY"/> 
                         </div>
-                        <div>
-                            <input className={styles.cvc} type="number" placeholder="e.g. 123"/> 
-                        </div>
+                        <input className={styles.cvc} type="number" placeholder="e.g. 123"/> 
+                        
                     </div>
                 </section>
                 <button> Confirm </button>
