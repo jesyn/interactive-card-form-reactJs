@@ -77,12 +77,16 @@ label {
 }
 
 input {
-    color: $LightViolet;
+    color: $DarkViolet;
     height: 40px;
     border-radius: 8px;
     border: 1px solid $LightViolet;
     background-color: white;
     padding-left: 15px;
+}
+
+::placeholder{
+    color: $LightViolet;
 }
 
 button {
@@ -92,4 +96,8 @@ button {
     border-radius: 8px;
     color: $White;
     margin-top: 30px;
+}
+
+.error {
+    border: 1px solid $Red;
 }

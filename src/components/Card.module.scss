@@ -1,3 +1,5 @@
+@use "./../styles/colors.scss" as *;
+
 .background {
     width: 100%;
     height: 200px;
@@ -17,6 +19,14 @@
     position: absolute;
     top: 20px;
     left: 20px;
+        .cvc{
+            position: absolute;
+            top: 65px;
+            font-size: 8px;
+            font-weight: 300;
+            right: 65px;
+            letter-spacing: 1px;
+        }
 }
 
 .card_front {
@@ -29,5 +39,53 @@
     position: absolute;
     bottom: -40px;
     right: 20px;
+        .number{
+            position: absolute;
+            top: 80px;
+            left: 50px;
+            letter-spacing: 2px;
+        }
+        .name{
+            position: absolute;
+            font-size: 8px;
+            bottom: 15px;
+            left: 50px;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+        .date{
+            position: absolute;
+            bottom: 15px;
+            font-size: 8px;
+            font-weight: 300;
+            right: 50px;
+            letter-spacing: 1px;
+        }
+
+}
+
+p {
+    color: $White;
+}
+
+.bigCircle{
+    background-color: hsl(0deg, 0%, 100%);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+
+}
+
+.smallCircle{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    position: absolute;
+    left: 85px;
+    top: 22px;
+    border: 1px solid white;
 
 }
